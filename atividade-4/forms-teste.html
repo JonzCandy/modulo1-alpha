@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <form>
-        <label for="nome">Almoço:</label><br />
-        <input type="radio" value="macarrao" />
-        Macarrão<br />
-    </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos no Restaurante</title>
+    </head>
+
+    <body>
+        <form>
+            <label for="cliente">Nome do Cliente:</label><br />
+            <input type="text" name="cliente" id="cliente" />
+            <br />
+            <label for="mesa">Numero da mesa:</label><br />
+            <input type="number" name="mesa" id="mesa" required min="1" max="20" />
+            <br />
+            <br />
+            <label for="comida">Almoço:</label><br />
+            <input type="radio" name="comida" id="comida-1" value="macarrao" />Macarrão<br />
+            <input type="radio" name="comida" id="comida-2" value="canja" />Canja de Galinha<br />
+            <input type="radio" name="comida" id="comida-3" value="lasanha" />Lasanha<br />
+            <input type="radio" name="comida" id="comida-4" value="miojo" />Miojo sabor Frango<br />
+            <br />
+            <label for="bebida">Bebida:</label><br />
+            <input type="radio" name="bebida" id="bebida-1" value="sucola" />Suco de Laranja<br />
+            <input type="radio" name="bebida" id="bebida-2" value="sucom" />Suco de Morango<br />
+            <input type="radio" name="bebida" id="bebida-3" value="sucoli" />Suco de Limão<br />
+            <input type="radio" name="bebida" id="bebida-4" value="coca" />Cola-Cola<br />
+            <br />
+            <label for="opicional">Canudos?</label><br />
+            <input type="radio" name="opicional" id="opicional-1" value="sim" />Sim, adoro matar animais marinhos<br />
+            <input type="radio" name="opicional" id="opicional-2" value="nao" />Não, eu gosto da vida marinha<br />
+            <br />
+            <button type="submit">Confirmar Pedido</button><button type="reset">Refazer pedido</button>
+        </form>
+    </body>
 
 </html>
