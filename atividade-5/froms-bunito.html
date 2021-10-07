@@ -8,12 +8,12 @@
     </head>
 
     <body>
-        <form>
-            <fieldset style="text-align: center;" >
+        <form  style="text-align: center; padding: 20px; margin: auto;  max-width: 600px;">
+            <fieldset style="background-color:lightseagreen; border-radius: 20px; border-width: 15px;">
                 <h1>Solicitação a Cozinha</h1>
-                <img src="/imgs/cardapio.jpg" alt="cozinhando">
+                <img src="/imgs/cardapio.jpg" alt="cozinhando" style="width:100%;">
                 <fieldset>
-                    <legend>Quem está atendendo a mesa?</legend>
+                    <legend><h3>Quem está atendendo a mesa?</h3></legend>
                     <p>
                         <label for="worker">Funcionario:</label><br />
                         <input type="text" name="worker" />
@@ -21,7 +21,7 @@
                 </fieldset>
                 <br />
                 <fieldset>
-                    <legend>Informações do Cliente</legend>
+                    <legend><h3>Informações do Cliente</h3> </legend>
                     <p>
                         <label for="cliente">Nome do Cliente:</label><br />
                         <input type="text" name="cliente" id="cliente" />
@@ -32,10 +32,10 @@
                 </fieldset>
                 <br />
                 <fieldset>
-                    <legend>Pedido</legend>
+                    <legend><h2>Pedido</h2></legend>
                     <p>
                         <fieldset>
-                            <legend>Almoço</legend>
+                            <legend><h3>Almoço</h3></legend>
                             <p>
                                 <input type="radio" name="comida" id="comida-1" value="macarrao" />
                                 <label for="comida_1">Macarrão</label><br />
@@ -49,7 +49,7 @@
                         </fieldset>
                         <br />
                         <fieldset>
-                            <legend>Bebidas</legend>
+                            <legend><h3>Bebidas</h3></legend>
                             <p>
                                 <input type="radio" name="bebida" id="bebida-1" value="sucola" />
                                 <label for="bebida_1">Suco de Laranja</label><br />
@@ -58,12 +58,12 @@
                                 <input type="radio" name="bebida" id="bebida-3" value="sucoli" />
                                 <label for="bebida_3">Suco de Limão</label><br />
                                 <input type="radio" name="bebida" id="bebida-4" value="coca" />
-                                <label for="bebida_4">Suco de Laranja</label><br />
+                                <label for="bebida_4">Coca-Cola</label><br />
                             </p>
                         </fieldset>
                         <br />
                         <fieldset>
-                            <legend>Canudos</legend>
+                            <legend><h3>Canudos</h3></legend>
                             <p>
                                 <input type="radio" name="opicional" id="opicional-1" value="sim" />
                                 <label for="opicional-1">Sim</label><br />
@@ -72,6 +72,10 @@
                             </p>
                         </fieldset>
                         <br />
+                        <fieldset>
+                            <legend><h3>Algo a solicitar no pedido?</h3></legend>
+                            <textarea></textarea>
+                        </fieldset>
                     </p>
                 </fieldset>
                 <br />
