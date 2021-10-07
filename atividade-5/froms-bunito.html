@@ -4,36 +4,82 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pedidos no Restaurante</title>
+        <title>Re-Pedidos no Restaurante</title>
     </head>
 
     <body>
         <form>
-            <label for="cliente">Nome do Cliente:</label><br />
-            <input type="text" name="cliente" id="cliente" />
-            <br />
-            <label for="mesa">Numero da mesa:</label><br />
-            <input type="number" name="mesa" id="mesa" required min="1" max="20" />
-            <br />
-            <br />
-            <label for="comida">Almoço:</label><br />
-            <input type="radio" name="comida" id="comida-1" value="macarrao" />Macarrão<br />
-            <input type="radio" name="comida" id="comida-2" value="canja" />Canja de Galinha<br />
-            <input type="radio" name="comida" id="comida-3" value="lasanha" />Lasanha<br />
-            <input type="radio" name="comida" id="comida-4" value="miojo" />Miojo sabor Frango<br />
-            <br />
-            <label for="bebida">Bebida:</label><br />
-            <input type="radio" name="bebida" id="bebida-1" value="sucola" />Suco de Laranja<br />
-            <input type="radio" name="bebida" id="bebida-2" value="sucom" />Suco de Morango<br />
-            <input type="radio" name="bebida" id="bebida-3" value="sucoli" />Suco de Limão<br />
-            <input type="radio" name="bebida" id="bebida-4" value="coca" />Cola-Cola<br />
-            <br />
-            <label for="opicional">Canudos?</label><br />
-            <input type="radio" name="opicional" id="opicional-1" value="sim" />Sim, adoro matar animais marinhos<br />
-            <input type="radio" name="opicional" id="opicional-2" value="nao" />Não, eu gosto da vida marinha<br />
-            <br />
-            <button type="submit">Confirmar Pedido</button><button type="reset">Refazer pedido</button>
+            <fieldset style="text-align: center;" >
+                <h1>Solicitação a Cozinha</h1>
+                <img src="/imgs/cardapio.jpg" alt="cozinhando">
+                <fieldset>
+                    <legend>Quem está atendendo a mesa?</legend>
+                    <p>
+                        <label for="worker">Funcionario:</label><br />
+                        <input type="text" name="worker" />
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Informações do Cliente</legend>
+                    <p>
+                        <label for="cliente">Nome do Cliente:</label><br />
+                        <input type="text" name="cliente" id="cliente" />
+                        <br />
+                        <label for="mesa">Numero da mesa:</label><br />
+                        <input type="number" name="mesa" id="mesa" required min="1" max="20" />
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Pedido</legend>
+                    <p>
+                        <fieldset>
+                            <legend>Almoço</legend>
+                            <p>
+                                <input type="radio" name="comida" id="comida-1" value="macarrao" />
+                                <label for="comida_1">Macarrão</label><br />
+                                <input type="radio" name="comida" id="comida-2" value="canja" />
+                                <label for="comida_2">Canja de Galinha</label><br />
+                                <input type="radio" name="comida" id="comida-3" value="lasanha" />
+                                <label for="comida_3">Lasanha</label><br />
+                                <input type="radio" name="comida" id="comida-4" value="miojo" />
+                                <label for="comida_4">Miojo sabor Frango</label><br />
+                            </p>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend>Bebidas</legend>
+                            <p>
+                                <input type="radio" name="bebida" id="bebida-1" value="sucola" />
+                                <label for="bebida_1">Suco de Laranja</label><br />
+                                <input type="radio" name="bebida" id="bebida-2" value="sucom" />
+                                <label for="bebida_2">Suco de Morango</label><br />
+                                <input type="radio" name="bebida" id="bebida-3" value="sucoli" />
+                                <label for="bebida_3">Suco de Limão</label><br />
+                                <input type="radio" name="bebida" id="bebida-4" value="coca" />
+                                <label for="bebida_4">Suco de Laranja</label><br />
+                            </p>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend>Canudos</legend>
+                            <p>
+                                <input type="radio" name="opicional" id="opicional-1" value="sim" />
+                                <label for="opicional-1">Sim</label><br />
+                                <input type="radio" name="opicional" id="opicional-1" value="nao" />
+                                <label for="opicional-1">Não</label><br />
+                            </p>
+                        </fieldset>
+                        <br />
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <button type="submit">Confirmar Pedido</button><button type="reset">Refazer pedido</button>
+                </fieldset>
+                </p>
+            </fieldset>
         </form>
     </body>
-
 </html>
