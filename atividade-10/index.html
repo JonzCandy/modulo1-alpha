@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>CanvasImage</title>
+
+        <script type="application/javascript">
+            function draw() {
+                var canvas = document.getElementById('teste');
+                if (canvas.getContext) {
+                    var ctx = canvas.getContext('2d');
+
+                    ctx.beginPath();
+                    ctx.arc(500, 400, 400, 0, Math.PI * 2, true);
+                    ctx.fill();
+
+                    ctx.fillStyle = 'white';
+                    ctx.beginPath();
+                    ctx.arc(500, 490, 300, 0, Math.PI * 2, true);
+                    ctx.arc(500, 0, 100, 0, Math.PI * 2, true);
+                    ctx.fill();
+
+                    ctx.fillStyle = 'black';
+                    ctx.beginPath();
+                    ctx.moveTo(400, 475);
+                    ctx.bezierCurveTo(400, 400, 375, 375, 330, 375);
+                    ctx.bezierCurveTo(280, 375, 280, 450, 280, 450);
+                    ctx.lineTo(400, 475);
+                    ctx.bezierCurveTo(400, 520, 375, 575, 330, 575);
+                    ctx.bezierCurveTo(280, 575, 280, 500, 280, 500);
+                    ctx.moveTo(700, 475);
+                    ctx.bezierCurveTo(700, 400, 675, 375, 630, 375);
+                    ctx.bezierCurveTo(580, 375, 580, 450, 580, 450);
+                    ctx.lineTo(700, 475);
+                    ctx.bezierCurveTo(700, 520, 675, 575, 630, 575);
+                    ctx.bezierCurveTo(580, 575, 580, 500, 580, 500);
+                    ctx.fill();
+
+                    ctx.beginPath();
+                    ctx.moveTo(500,750)
+                    ctx.bezierCurveTo(500, 750, 350, 750, 300, 600);
+                    ctx.bezierCurveTo(300, 600, 500, 675, 700, 600);
+                    ctx.bezierCurveTo(700, 600, 650, 750, 500, 750)
+                    ctx.fill();
+
+                    ctx.beginPath();
+                    ctx.arc(500, 875, 50, 0, Math.PI * 2, true);
+                    ctx.moveTo(450,875)
+                    ctx.lineTo(400, 875);
+                    ctx.moveTo(550,875)
+                    ctx.lineTo(600, 875);
+                    ctx.moveTo(450,875)
+                    ctx.lineTo(350, 775);
+                    ctx.bezierCurveTo(350, 775, 275, 825, 350, 875);
+                    ctx.bezierCurveTo(350, 875, 275, 925, 350, 975);
+                    ctx.lineTo(450, 875);
+                    ctx.moveTo(550,875)
+                    ctx.lineTo(650, 775);
+                    ctx.bezierCurveTo(650, 775, 725, 825, 650, 875);
+                    ctx.bezierCurveTo(650, 875, 725, 925, 650, 975);
+                    ctx.lineTo(550,875);
+                    ctx.stroke();
+                }
+            }
+        </script>
+    </head>
+
+    <body onload="draw();">
+        <canvas id="teste" width="1000" height="1000"></canvas>
+    </body>
+
+</html>
